@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .right-floating-div {
+            float: right;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+<h1>Welcome to Muhsen's Dealership!</h1>
+<h3> Drive Your Dreams Home: Explore Our Premier Car Collection</h3>
+<div class="right-floating-div"><button id="selectionCarButton">View Car Selection</button>
+    <br>
+
+    <?php
+session_start();
+
+if (isset($_SESSION["cart"])) {
+    echo("Selection Car(s): ". count($_SESSION["cart"]));
+}
+else{
+    echo ("Selection Car(s) is Empty");
+}
+?>
+
+    <script type="text/javascript">
+        document.getElementById('selectionCarButton').addEventListener('click',
+            function () {
+                window.location.href = 'selectionCars.php';
+            });
+    </script></div>
+</body>
+</html>
