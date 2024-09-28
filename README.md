@@ -1,1 +1,1 @@
-# Car_Marketplace
+This project developed using PHP, HTML, and CSS, offers a user-friendly platform for buying cars online. Key features include user authentication, comprehensive inventory management, advanced search and filter options, interactive car listings, and responsive design for compatibility across devices. Future enhancements could include integration with payment gateways, and customer reviews & ratings. Overall, the website provides a seamless experience for users navigating the car buying process, with ongoing improvements to meet evolving needs.
